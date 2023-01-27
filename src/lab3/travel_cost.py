@@ -39,8 +39,15 @@ def get_route_cost(route_coordinate, game_map):
     :return: a floating point number representing the cost of the route
     """
     # Build a path from start to end that looks like [(0, 0), (1, 1), (2, 2), (3, 3), (4, 4), (5, 4)]
-    pass 
-    return game_map[tuple(zip(*path))].sum()
+    grid = Grid(matrix=game_map)
+    finder = AStarFinder()
+    cost = 0
+    for i in range(len(route_coordinate) - 1):
+        start_x, start_y = route_coordinate[i]
+        end_x, end_y = route_coordinate[i+1]
+        path, path_cost = finder.find_path(start_x, start_y, end_x, end_y)
+        cost += path_cost
+    return cost
 
 
 def route_to_coordinates(city_locations, city_names, routes):
