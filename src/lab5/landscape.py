@@ -13,7 +13,7 @@ def get_elevation(size):  # size = (640, 480)
 
     return elevation  # size = (640, 480)
 
-
+Hello
 def elevation_to_rgba(elevation):
     xpix, ypix = np.array(elevation).shape
     colormap = plt.cm.get_cmap('gist_earth')

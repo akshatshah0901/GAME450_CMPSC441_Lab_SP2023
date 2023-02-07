@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
         ''' draw cities '''
     pygame.draw.circle(size, get_randomly_spread_cities, 5)
-
+    Hello
     route_color = (0, 0, 255)
     ''' draw first 10 routes '''
 
