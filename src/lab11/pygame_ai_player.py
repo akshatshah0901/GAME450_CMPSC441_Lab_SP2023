@@ -1,5 +1,5 @@
 """ Create PyGameAIPlayer class here"""
-from turn_combat import CombatPlayer
+from lab11.turn_combat import CombatPlayer
 import random 
 from lab4.player import Player
 

@@ -22,6 +22,7 @@ from lab11.pygame_combat import PyGameComputerCombatPlayer
 from lab11.turn_combat import CombatPlayer
 from lab12.episode import player1
 from lab12.episode import player2
+from lab12.episode import run_episode
 from collections import defaultdict
 import random
 import numpy as np
